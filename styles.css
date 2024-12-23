@@ -1,0 +1,25 @@
+body, html {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+#openingpicture{
+  text-align: center;
+  padding-top: 50px;
+  width: 100%;
+  height: 200px;
+  background-color: blue;
+  margin: 0px;
+  padding: 0px;
+}
+#openingtitle {
+  font-size: 40px;
+  color: white;
+}
+#aboutmediv {
+  position: static;
+  text-align: center;
+  background-color: teal;
+  margin:0px;
+  padding: 0px;
+}
