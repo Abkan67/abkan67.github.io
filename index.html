@@ -1,14 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="styles.css">
-  <meta charset="UTF-8">
-  <title>The Index</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhitej K</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="projects.css">
 </head>
 <body>
-  <div id="openingpicture"><h1 id="openingtitle">Abhitej Kanuri</h1></div>
-  <div id="aboutmediv"><h1>About Me</h1>  <span style="font-size:20px;">I am a high schooler living in NJ. I started out coding HTML and Javascript in 2018, and have worked on it on and off since then. I love making small games on javascript and decided to put them all up online in one place. Enjoy!</span></div>
-  <div id="allgamesdisplay"></div>
-  <script src="main.js" charset="utf-8"></script>
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Abhitej Kanuri</h1>
+        <a href="#projects">Projects</a>
+    </div>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About Abhitej</h2>
+            <p style="text-align: center;">
+              I am Abhitej, a high schooler living in NJ. I started programming by learning HTML and Javascript 
+              in 2018, and have enjoyed occasionally making projects.
+            </p>
+            <p>
+              This website is not meant to provide anything holistic about me and my experience, it is simply a 
+              directory to keep links and information about my favorite projects.
+            </p>
+        </section>
+
+        <br><br><hr id="projectsSeperationBar"><br><br>
+        
+        <section id="projects">
+          <h1>My Projects</h1>
+          
+          <h2>Solo Games</h2>
+            <div class="card-container">
+              <div class="card" style='background-image: url("assets/wizwarsScreenshot.png");'>
+
+                  <h3 style = "color: #000;">Wiz Wars</h3>
+                  <div class="longDescription">
+                    <h1>Wiz Wars</h1>
+                    <p>Wiz Wars is an HTML Canvas game originally made in 2021. Dodge opposing enemies while taking them out to increase your own power for harder levels. </p>
+                    <br><a class="btn" href = "https://abkan67.github.io/Mage-Duel/" target="_blank">Go to Game</a>
+                  </div>
+              </div>
+              <div class="card" style='background-image: url("assets/MafiaSreenshot.png");'>
+                  <h3 style="color: #000;">Mafia Puzzle</h3>
+                  <div class="longDescription">
+                    <h1>Mafia Puzzle</h1>
+                    <p>Have you ever wanted to play a social deduction game without being social? Talk to a town full of suspects to catch them in their lies and hang the killer.</p>
+                    <br><a class="btn" href = "https://abkan67.github.io/MafiaPuzzle/" target="_blank">Go to Game</a>
+                  </div>
+                  <p></p>
+              </div>
+            </div>
+          <h2>Multi-Player</h2>
+            <div class="card-container">
+              <div class="card"  style='background-image: url("assets/SquaresScreenshot.png");'>
+                  <h3 style="position: relative; top: -20px;">SquaresBall</h3>
+                  <div class="longDescription">
+                    <h1>SquaresBall</h1>
+                    <p>Rocket-League inspired game made with a Matter.js engine. Use the WASD and Arrow keys to control the ball and push it past the opponent.</p>
+                    <br><a class="btn" href = "https://abkan67.github.io/SquaresBall/" target="_blank">Go to Game</a>
+                  </div>
+              </div>
+              <div class="card" style='background-image: url("assets/Tankards.png");'>
+                  <h3>Tankards</h3>
+                  <div class="longDescription">
+                    <h1>Tankards</h1>
+                    <p>Tankards is a multiplayer java game made for a school project. It makes use of UDP protocol networking, allowing for multiple players to connect from different devices.
+                      <br> The game is not available on the web, and must be downloaded and compiled in order to be run. </p>
+                    <br><a class="btn" href = "https://github.com/Abkan67/tankards" target="_blank">See the Code</a>
+                  </div>
+              </div>
+            </div>
+          <h2>Tools</h2>
+            <div class="card-container">
+              <div class="card"  style='background-image: url("assets/positionMapScreenshot.png");'>
+                  <h3 style="color: #000;">Position Mapping Tool</h3>
+                  <div class="longDescription">
+                    <h1>Position Mapping Tool</h1>
+                    <p>This is one of the first projects I made; the project uses DOM manipulation to create different tokens on a grid, as well as allowing the user to add names and descriptions to them.</p>
+                    <br><a class="btn" href = "https://abkan67.github.io/Position-Map/" target="_blank">Go to Tool</a>
+                  </div>
+              </div>
+              <div class="card" style='background-image: url("assets/MazeFunctionScreenshot.png");'>
+                  <h3>Maze Maker</h3>
+                  <div class="longDescription">
+                    <h1>Maze Maker</h1>
+                    <p style="font-size: 13px;">
+                      This is a java program that uses a maze-generation algorithm in order to generate a maze. I added colors because I thought it looked cool, although they would not be in an actual generated maze.
+                      <br>The algorithm is based off of a pointer, which randomly moves through a grid without doubling back, and creates a path wherever it moves. When the pointer gets stuck, it moves backward until there is a new place to move.
+                      <br>This tool is not available on the web, and must be downloaded and compiled in order to use.
+                    </p>
+                    <a class="btn" href = "https://github.com/Abkan67/StackMaze" target="_blank">Go to Code</a>
+                  </div>
+              </div>
+              <div class="card" style='background-image: url("assets/WaveFunctionScreenShot.png");'>
+                  <h3>Wave Function Collapse</h3>
+                  <div class="longDescription">
+                    <h1>Wave Function Collapse</h1>
+                    <p style="font-size: 12px;">
+                      The wave function collapse algorithm is inspired by quantum mechanicsm, specifically superpositions and collapses. Each tile has a set of possibilities it can take up, and a number of rules dictating how the tiles can be placed in relation to each other. One tile is collapsed at random, by evaluating its state from the possibilities; the algorithm will then collapse the tile with the least possible states under the rules. This will continue until the entire grid is collapse.
+                      <br>This algorithm creates a grid of tiles with blue and green ends, with the rule that blue ends must connect to blue ends, and green ends must connect to green ends.
+                      <br>This tool is not available on the web, and must be downloaded and compiled in order to use.
+                    </p>
+                    <a class="btn" href = "https://github.com/Abkan67/Wave-Function-Collapse" target="_blank">Go to Code</a>
+                  </div>
+              </div>
+            </div>
+          <h2>Other Stuff</h2>
+            <div class="card-container">
+              <div class="card" style="background-image: url('assets/MacarenaScreenshot.png');">
+                <h3 style="position: relative; top: -15px;">The Spooky Macarena</h3>
+                <div class="longDescription">
+                  <h1>The Spooky Macarena</h1>
+                  <p>Is this project paticularly impressive or interesting? Probably not. But is it super entertaining for a few seconds? Maybe
+                    <br> This is an animation I built for a school halloween java design contest, and it was voted as the best project of the class.
+                    <br> This project is not hosted on the web, and must be downloaded in order to be run. However, I included a video recording of the animation.
+                  </p>
+                  <a href="assets/MacarenaScreenshot.png" download class="btn" target="_blank">Go to Code & Video</a>
+                </div>
+              </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+    </footer>
+  <script src="main.js"></script>
 </body>
 </html>

@@ -1,0 +1,67 @@
+
+/* Card Styles */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: left;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    border: 1px solid #444;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: #fff;
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+  }
+  
+  .card.hovered {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(255, 255, 255, 0.2);
+    width: 100%;
+  }
+
+  .card.hovered h3 {
+    display: none;
+  }
+
+  .longDescription {
+    display: none;
+  }
+  .card.hovered .longDescription {
+    display: block;
+    position: absolute;
+    width: calc(100% - 300px);
+    height: calc(100% - 40px);
+    right: 0px;
+    border-top: 30px solid green;
+    border-bottom: 10px solid green;
+  }
+  .longDescription .btn {
+    background: #0d0;
+    position: absolute;
+    right: 0px;
+    bottom: 2%;
+    border: none;
+    width: 60%;
+    height: 20%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 300%;
+    color: #000;
+  }
+  .longDescription .btn:hover {
+    background: #0a0;
+  }
+  .card a {
+    text-decoration: none;
+  }
+  .card h1 {
+    margin-bottom: -20px;
+  }
